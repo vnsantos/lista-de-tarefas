@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(32, 31, 31);
+    color: whitesmoke;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+header {    
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 90%;
+    /* border: 1px solid red; */
+    margin: auto auto;
+}
+
+input {
+    height: 80px;
+    width: 80%; 
+    font-size: 2rem;
+    padding-left: 10%;
+}
+
+button.add {
+    width: 20%;
+    cursor: pointer;
+    background: green;
+    color: whitesmoke;
+    font-weight: bold;
+    border: none;
+    height: 80px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+button.add:hover {
+    background: rgb(6, 141, 6)
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto auto;
+    /* border: 1px solid blue; */
+    padding-top: 40px;
+}
+
+.item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: rgb(63, 59, 59);
+    height: 60px;
+    width: 100%;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+
+.item.clicado .item-texto{
+    text-decoration: line-through;
+    color: gray
+}
+
+.item-icone{
+    flex: 20%;
+    /* border: 1px solid orangered; */
+    text-align: center;
+    font-size: 2rem;
+}
+
+.item-texto{
+    flex: 55%;
+    /* border: 1px solid white; */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.item-botao{
+    flex: 25%;
+    /* border: 1px solid green; */
+}
+
+.delete {
+    background: red;
+    color: whitesmoke;
+    border: none;
+    padding: 10px;
+    height: 60px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.delete:hover {
+    background: rgb(221, 61, 61);
+}
+
+.mdi-check-circle{
+    color: green;
+}
